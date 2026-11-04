@@ -1,0 +1,17 @@
+# Compilazione
+build/
+blackjack
+blackjack.exe
+*.o
+*.d
+*.exe
+
+# Appunti personali (restano sul tuo PC, non su GitHub)
+personal/
+
+# Editor e sistema operativo
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db

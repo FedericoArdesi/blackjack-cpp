@@ -1,0 +1,7 @@
+# Fine riga uniformi (LF nel repository) su Windows, Linux e macOS
+* text=auto eol=lf
+
+# File binari: git non deve toccarli
+*.png binary
+*.exe binary
+*.o binary
