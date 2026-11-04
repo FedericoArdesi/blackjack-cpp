@@ -1,6 +1,5 @@
 # Blackjack da terminale
 
-[![CI](https://github.com/FedericoArdesi/blackjack-cpp/actions/workflows/ci.yml/badge.svg)](https://github.com/FedericoArdesi/blackjack-cpp/actions/workflows/ci.yml)
 [![Licenza: MIT](https://img.shields.io/badge/licenza-MIT-blue.svg)](LICENSE)
 ![C++17](https://img.shields.io/badge/C%2B%2B-17-00599C.svg)
 
