@@ -8,7 +8,8 @@ Un blackjack completo che si gioca nel terminale, scritto in **C++17 senza libre
 Carte disegnate in ASCII/Unicode, colori, statistiche di sessione e le regole del casinò:
 split, raddoppio, resa e assicurazione.
 
-<!-- Aggiungi qui uno screenshot:  ![Screenshot](docs/images/screenshot.png) -->
+<!-- TODO: aggiungere uno screenshot in docs/images/screenshot.png e decommentare la riga sotto -->
+<!-- ![Screenshot](docs/images/screenshot.png) -->
 
 ## Caratteristiche
 
@@ -82,7 +83,7 @@ blackjack/
 │   └── partita/          svolgimento di una mano e di una sessione
 ├── tests/                test automatici della logica
 ├── tools/                demo con carte decise, per provare i casi rari
-├── docs/                 diagrammi e immagini
+├── docs/images/          diagrammi dell'architettura
 ├── Makefile
 └── LICENSE
 ```
@@ -90,8 +91,25 @@ blackjack/
 Il codice è diviso in strati: la **logica** non disegna niente, la **grafica** non decide le regole,
 la **partita** le collega. Per questo la logica si può testare senza avviare il gioco.
 
-Diagrammi dell'architettura: [`docs/diagrammi.html`](docs/diagrammi.html) (da aprire nel browser,
-oppure scaricandolo dal repository).
+## Architettura
+
+I diagrammi in `docs/images/` mostrano come lavorano insieme i vari strati.
+
+**I tre strati.** `main()` chiama la partita, che collega grafica e logica; terminale e dati sono usati da tutti.
+
+![I tre strati: partita, grafica, logica](docs/images/architettura-strati.png)
+
+**Il percorso di una mano**, dalla puntata al pagamento.
+
+![Il percorso di una mano](docs/images/percorso-di-una-mano.png)
+
+**La risoluzione della mano**: come la logica decide l'esito e aggiorna le fiches.
+
+![Risoluzione della mano](docs/images/risoluzione-mano.png)
+
+**Lo split**: come una mano diventa due (fino a un massimo di quattro).
+
+![Lo split](docs/images/split.png)
 
 ## Test e demo
 
