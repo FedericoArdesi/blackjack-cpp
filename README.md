@@ -105,11 +105,6 @@ make demo SCENARIO=split
 
 Scenari disponibili: `split`, `assicurazione`, `blackjack`, `asso`, `resa`.
 
-## Contribuire
-
-Segnalazioni e proposte sono benvenute: apri una issue o una pull request. Prima di inviare una
-modifica esegui `make test`.
-
 ## Licenza
 
 Distribuito con licenza MIT. Vedi il file [LICENSE](LICENSE).
